@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: 'Mulish', sans-serif;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+
+li {
+    list-style: none;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.wrapper {
+    margin-top: 50px !important;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.register {
+    margin-top: 10px;
+}
+
+.chatbox {
+    width: 100%;
+    height: 500px;
+    background-color: rgb(232, 232, 232);
+    border-radius: 7px;
+    border: 1px solid rgb(191, 191, 191);
+}
+
+ul.chat {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 20px 60px;
+    overflow: auto;
+}
+
+ul.chat > li.message {
+    background-color: white;
+    margin-bottom: 7px;
+    box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.11);
+    padding: 15px;
+    border-radius: 5px;
+    width: 50%;
+    height: auto;
+}
+
+.me {
+    background-color: rgb(62, 118, 238) !important;
+    color: white;
+    margin-left: auto;
+}
+.sent {
+    background-color: white;
+}
+
+.sender {
+    font-size: 12px;
+}
+.sent > .sender {
+    color: rgb(187, 187, 187);
+}
+.me > .sender {
+    color:rgb(157, 188, 255)
+}
+
+.chat_input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid rgb(194, 194, 194);
+}
